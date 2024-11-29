@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery Slider</title>
+  <!-- Include jQuery and jQuery UI -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <style>
+    #slider-container {
+      width: 300px;
+      margin: 50px auto;
+      text-align: center;
+    }
+    #slider-value {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="slider-container">
+    <div id="slider"></div>
+    <div id="slider-value">Value: 0</div>
+  </div>
+
+  <script>
+    $(function () {
+      $("#slider").slider({
+        range: "min",      // Slider style
+        min: -100,         // Minimum value
+        max: 100,          // Maximum value
+        value: 0,          // Starting value
+        slide: function (event, ui) {
+          $("#slider-value").text("Value: " + ui.value); // Update value on slide
+        },
+      });
+
+      // Set initial value display
+      $("#slider-value").text("Value: " + $("#slider").slider("value"));
+    });
+  </script>
+</body>
+</html>

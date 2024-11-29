@@ -1,0 +1,222 @@
+/* 
+File: style.css 
+ GUI Assignment:  Creating a Dynamic Multipication table using JS 
+ Allen Zammer, UMass Lowell Computer Science, allen_zammer@student.uml.edu 
+ Copyright (c) 2024 by Allen.  All rights reserved.  May be freely copied or 
+ excerpted for educational purposes with credit to the author. 
+ updated by AZ on October 30, 2024 at  11:59 PM */
+
+.slider-container {
+    width: 300px;
+    margin: 7.5px auto;
+    text-align: center;
+    min-width: 50px;
+}
+.slider-value {
+    font-size: 1em;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.slider .ui-slider-handle {  
+    min-width:14px; 
+    height:30px; 
+    top:-4px;
+}
+
+#xMin, #xMax, #yMin, #yMax {
+    width:100%;
+}
+
+
+#myTabs {   
+    margin-top: 0;
+    padding:5px; 
+    border:1px solid #636363;  
+    background:#c2c2c2 none; 
+    max-width: 100%;
+    max-height: 475px;  
+}
+.ui-widget-header {  
+    border:0; 
+    background:#c2c2c2 none; 
+    font-family:Georgia; 
+}
+
+#myTabs .ui-widget-content {  
+    border:1px solid #aaa; 
+    background:#fff none; 
+    font-size:80%; 
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default {  
+    border:1px solid #636363; 
+    background:#a2a2a2 none; 
+    
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active {  
+    border:1px solid #aaa; 
+    background:#fff none; 
+}
+
+body{
+    background-color:gray;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.content{
+    background-color: darkgray;
+    border-radius: 50px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom:10px;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    background-color:rgb(0, 0, 0, .75);
+}
+
+.header{
+ background-image: url(../images/math_background.jpg);
+ border-radius: 25px;
+}
+
+#info{
+    color:white;
+    font-size: 13pt;
+    margin:15px;
+    margin-top:5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#bigDawg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height:auto;
+}
+
+#multiplicationForm{
+    color:white;
+    background-color: black;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right:0;
+    float: left;
+    min-width: 325px;
+}
+
+button {
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+#top {
+    margin-left: 15px;
+    margin-bottom: 5px;
+    
+}
+
+/* label {
+    float: left;
+} */
+
+/* #xMin, #xMax, #yMin, #yMax, label    {
+    margin-left:25px;
+} */
+
+td{
+    border: solid 2px black;
+    padding: 5px;
+    padding-left:0;
+    margin-left:0;
+    text-align: center;
+    min-width: 50px;
+    min-height: 50px;
+
+}
+
+th {
+    position: sticky;
+    background: black;
+    color: white; 
+    text-align: center;
+    padding: 5px;
+    padding-left:0;
+    min-width: 75px;
+    min-height: 75px;
+    z-index: 1;
+    white-space: nowrap;
+}
+
+#first-row {
+    padding-left:0;
+    margin-left:0;
+    top: 0;
+}
+
+#first-col {
+    background:black;
+    margin-left:0;
+    left:0;
+}
+
+#special {
+    background-color: white;
+    position: sticky;
+    top:0;
+    left:0;
+    z-index: 2;
+}
+
+#tableCont { 
+    max-width: 100%;
+    max-height: 475px;
+    margin-bottom: 10px;
+}
+
+#holder {
+    max-width: 100%;
+    max-height: 325px; 
+    overflow: auto; 
+}
+
+#xMinT, #xMaxT, #yMinT, #yMaxT {
+    max-width: 50px;
+    margin-bottom: 5px;
+    text-align: center;
+
+}
+
+
+
+#table {
+    width: 100%;
+    padding-left:0;
+    margin-left:0;  
+    max-width: 400px;
+    max-height: 475px;    
+    overflow:scroll;
+}
+form {
+    background-color: black;
+}
+
+
+tr:nth-child(even) td:nth-child(even),
+tr:nth-child(odd) td:nth-child(odd){
+  background: white;
+}
+
+#warning {
+    color:Orange;
+}
+
+#error {
+    color: red;
+}
